@@ -1,0 +1,188 @@
+.App{
+  background: #202b33;
+  color: #fff;
+  font-family: Lato;
+}
+.App .header {
+  background-color: #253139;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  height: 70px;
+  line-height: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.header .booking {
+  font-size: 14px;
+  font-weight: 600;
+  color: #87959f;
+}
+
+.App .label{
+  font-size: 12px;
+  font-weight: 500;
+  color: #72848b;
+  padding: 0;
+}
+
+.App .number{
+  font-size: 24px;
+}
+
+
+.App .container {
+  width: 1140px;
+  padding: 0;
+}
+
+.App .reports{
+  box-sizing: border-box;
+  height: 105px;
+  display: flex;
+  align-items: center;
+}
+
+.App .separator{
+  border: solid 1px #374148;
+}
+
+.App .title{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.weekAvailability .percent{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  text-align: center;
+  border: 3px solid;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weekAvailability .percent.red,
+.App .activity .dot.red{
+  color:#FC4174;
+}
+.weekAvailability .percent.yellow,
+.App .activity .dot.yellow{
+  color: #ffbe57;
+}
+.weekAvailability .percent.green,
+.App .activity .dot.green{
+  color: #25cd6b;
+}
+.App .arrivedThisWeek .title{
+
+}
+/* orders */
+.App .orders{
+  height: 295px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.App .order{
+  line-height: 42px;
+  color: #72848b;
+  border-bottom: solid 1px #29353e;
+}
+
+.App .order .name{
+  align-items: center;
+  display: flex;
+}
+.App .order:first-child{
+  border-top: solid 1px #29353e;
+}
+
+.App .order .greendot{
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #25cd6b;
+  margin-right: 12.5px;
+}
+
+/* recent activity */
+.App .activities{
+  padding-left: 9px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #374148;
+  height: 361px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.App .activity{
+  position: relative;
+  padding-left: 15px;
+  padding-bottom: 23px;
+  border-left: solid 1px #27323a;
+}
+.App .activity .dot{
+  position: absolute;
+  width:8px;
+  height:8px;
+  border:2px solid;
+  left: -4px;
+  border-radius: 50%;
+  top: 6px;
+}
+.App .activity .activityType{
+  font-size: 14px;
+}
+.App .activity .timeAgo{
+  border-radius: 10px;
+  background-color: #28353d;
+  font-size: 12px;
+  font-weight: 500;
+  color: #72848b;
+  padding: 0px 15px;
+}
+.App .activity .description{
+  font-size: 12px;
+  font-weight: 500;
+  color: #72848b;
+}
+
+/* employee state */
+.App .employeeState .employee{
+  margin-bottom: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.App .employeeState .userPic{
+  width:33px;
+  height:33px;
+  border-radius: 50%;
+}
+.App .employeeState .name{
+  font-size: 12px;
+}
+.App .employeeState .hours{
+  font-size: 12px;
+  color: #72848b;
+}
+.App .employeeState .details{
+  padding-left: 15px;
+  flex-grow: 1;
+}
+.App .employeeState .bar{
+  background-color: #323d45;
+  border-radius: 2px;
+  margin-top: 2px;
+}
+.App .employeeState .fillbar{
+  background-color: #25cd6b;
+  height: 2px;
+}
+
+
+
+
+
