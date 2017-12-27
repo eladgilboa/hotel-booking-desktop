@@ -1,0 +1,31 @@
+.App {
+  @extend %lato, %font-small;
+  background: color(dark);
+  color: color(white);
+
+  .container{
+    width:1140px;
+    margin: 0 auto;
+  }
+
+  .title {
+    @extend %font-lite-big;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  &.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+}
+
+

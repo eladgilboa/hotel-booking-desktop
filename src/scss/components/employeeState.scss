@@ -1,0 +1,35 @@
+.employeeState{
+  .employee {
+    &:last-child{
+      margin-bottom: 0;
+    }
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    .userPic {
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+    }
+    .name {
+      font-size: 12px;
+    }
+    .hours {
+      font-size: 12px;
+      color: #72848b;
+    }
+    .details {
+      padding-left: 15px;
+      flex-grow: 1;
+    }
+    .bar {
+      background-color: #323d45;
+      border-radius: 2px;
+      margin-top: 2px;
+    }
+    .fillbar {
+      background-color: #25cd6b;
+      height: 2px;
+    }
+  }
+}

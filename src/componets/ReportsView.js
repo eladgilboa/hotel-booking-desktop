@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Report = ({ number,label }) => (
-  <div className="report col-sm-4">
+  <div className="report">
     <div className="number">{number}</div>
     <div className="label">{label}</div>
   </div>

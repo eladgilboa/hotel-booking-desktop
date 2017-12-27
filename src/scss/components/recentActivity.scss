@@ -1,0 +1,42 @@
+.recentActivity {
+  border-bottom: solid 1px mix(color(grey), color(dark-two), 16%);
+
+  .activities {
+    padding-left: 9px;
+    padding-right: 4px;
+    height: 415px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    .activity {
+      position: relative;
+      padding-left: 15px;
+      padding-bottom: 23px;
+      border-left: solid 1px #27323a;
+      .top {
+        padding: 5px 0;
+      }
+      .dot {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border: 2px solid;
+        left: -4px;
+        top: 10px;
+        box-sizing: border-box;
+      }
+      .activityType {
+        font-size: 14px;
+      }
+      .timeAgo {
+        border-radius: 10px;
+        background-color: color(dark-two);
+        color: color(steel-grey);
+        padding: 0 15px;
+      }
+      .description {
+        color: color(steel-grey);
+      }
+    }
+  }
+}

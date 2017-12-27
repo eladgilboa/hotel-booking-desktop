@@ -1,0 +1,12 @@
+.reports{
+  border-bottom: solid 1px mix(color(grey), color(dark-two), 16%);
+  .report{
+    .label {
+      color: color(steel-grey);
+      padding: 0;
+    }
+    .number {
+      @extend %huge;
+    }
+  }
+};

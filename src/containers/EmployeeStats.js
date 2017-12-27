@@ -14,17 +14,17 @@ const mapStateToProps = state => {
         if(!employees[employee.id]){
             employees[employee.id] = {...employee,sumHours:0};
         }
-        employees[employee.id].sumHours += moment(order.checkOutDate,'DD-MM-YYYY').diff(moment(order.checkInDate,'DD-MM-YYYY'), 'hours')
+        employees[employee.id].sumHours += moment(order.checkOutDate,'DD-MM-YYYY').diff(moment(order.checkInDate,'DD-MM-YYYY'), 'hours');
         return employees;
     },{});
 
     return {
-        employees : _.sortBy( _.values(employees), ['sumHours'])
+        employees : _.sortBy( _.values(employees), ['sumHours']).reverse()
     };
-}
+};
 
 const EmployeeState = connect(
     mapStateToProps
-)(EmployeeStateView)
+)(EmployeeStateView);
 
 export default EmployeeState

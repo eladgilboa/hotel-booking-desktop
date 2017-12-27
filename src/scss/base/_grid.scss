@@ -1,0 +1,61 @@
+$NumberOfColumns : 12;
+$NumberOfRow : 7;
+$grid-column-gap : 35px;
+$grid-row-gap: 0px;
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat( $NumberOfColumns,1fr);
+    grid-template-rows: repeat($NumberOfRow, minmax(105px,auto));
+    grid-column-gap: $grid-column-gap;
+    grid-row-gap: $grid-row-gap;
+}
+
+.reports {
+    grid-area: reports;
+    grid-column: 1 / span 9;
+    grid-row: 1/span 1;
+
+    display: grid;
+    grid-gap: $grid-column-gap;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.weekAvailability {
+    grid-column: 8 / 10;
+    grid-row: 2/ span 5;
+}
+
+.arrivedThisWeek {
+    grid-column: 1/ span 7;
+    grid-row: 2/span 5;
+
+    .order{
+        display: grid;
+        grid-gap: $grid-column-gap;
+        grid-template-columns: repeat(7,1fr);
+        .name{
+            grid-column: 1 / span 2;
+        }
+        .roomType{
+            grid-column: auto / span 2;
+        }
+        .period{
+            grid-column: auto / span 1;
+        }
+        .dates{
+            grid-column: auto / span 2;
+        }
+    }
+}
+
+.recentActivity {
+    grid-column: 10 / span 3;
+    grid-row: 1/ span 5;
+}
+
+.employeeState {
+    grid-column: 10 / span 3;
+    grid-row: 6/span 2;
+}

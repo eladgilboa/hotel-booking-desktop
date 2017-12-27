@@ -1,0 +1,12 @@
+.header {
+  @extend %font-big;
+  color: color(grey);
+  background-color: color(dark-two);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  height: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

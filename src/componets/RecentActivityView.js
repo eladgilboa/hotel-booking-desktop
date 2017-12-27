@@ -41,7 +41,7 @@ const Activity = ({ activityType,occurredAt,description }) => {
 
   return (
     <div className="activity">
-      <div className={classnames('dot',dotClass)}></div>
+      <div className={classnames('dot','circle',dotClass)}></div>
       <div className="top clearfix">
         <div className="activityType pull-left">{label}</div>
         <div className="timeAgo pull-right">{moment(occurredAt).fromNow()}</div>
@@ -49,7 +49,7 @@ const Activity = ({ activityType,occurredAt,description }) => {
       <div className="description">{description}</div>
     </div>
   );
-}
+};
 
 const RecentActivity = ({activities}) => (
     <div className="recentActivity">
@@ -62,6 +62,6 @@ const RecentActivity = ({activities}) => (
         }
       </div>
     </div>
-)
+);
 
 export default RecentActivity

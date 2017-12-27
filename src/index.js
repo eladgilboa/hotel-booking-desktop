@@ -1,7 +1,7 @@
 //import 'babel-polyfill'
 import React from 'react'
 import { render } from 'react-dom'
-import './index.css';
+import './style.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux'
@@ -15,7 +15,7 @@ const store = createStore(
     applyMiddleware(
         thunkMiddleware
     )
-)
+);
 
 render(
     <Provider store={store}>

@@ -1,0 +1,32 @@
+.orders {
+  height: 295px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 15px;
+
+  .order {
+    line-height: 42px;
+    color: color(steel-grey);
+    border: 0 solid mix(color(grey), color(dark-two), 1%);
+    border-bottom-width: 1px;
+
+    &:first-child {
+      border-top-width: 1px;
+    }
+
+    .dates {
+      text-align: right;
+    }
+    .name {
+      align-items: center;
+      display: flex;
+    }
+    .greendot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: color(green);
+      margin-right: 12.5px;
+    }
+  }
+}

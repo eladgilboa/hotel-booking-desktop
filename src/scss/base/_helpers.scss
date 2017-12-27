@@ -1,0 +1,35 @@
+.red {
+  color: color(red);
+}
+
+.yellow {
+  color: color(yellow);
+}
+
+.green {
+  color: color(green);
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+

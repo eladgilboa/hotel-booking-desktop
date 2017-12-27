@@ -38,7 +38,7 @@ const EmployeeState = ({employees}) => (
       <div className="title">Employee state</div>
       <div className="employees">
         {
-          employees.slice(employees.length -3).reverse().map( employee => {
+          employees.slice(employees.length -3).map( employee => {
             return <Employee {...employee} key={employee.id} />
           })
         }
